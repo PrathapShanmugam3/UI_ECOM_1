@@ -12,6 +12,9 @@ import { CategoryComponent } from './category/category.component';
 import { TypeComponent } from './type/type.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
+import { HashLocationStrategy, LocationStrategy } from '@angular/common';
+
+
 
 
 
@@ -37,7 +40,7 @@ import { MatSnackBarModule } from '@angular/material/snack-bar';
     MatSnackBarModule
 
   ],
-  providers: [],
+  providers: [{ provide: LocationStrategy, useClass: HashLocationStrategy }],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
