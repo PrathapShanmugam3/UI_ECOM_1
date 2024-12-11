@@ -55,6 +55,9 @@ export class FirstComponent implements OnInit {
           break;
         }
       }
+
+      console.log(res);
+      
   
       if (!adminExists) {
         this.car.addDefaultAdmin(this.usersInformation).subscribe((res) => {
