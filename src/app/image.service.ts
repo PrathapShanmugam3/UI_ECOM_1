@@ -9,7 +9,7 @@ export class ImageService {
 
   constructor(private http:HttpClient) { }
 
-  baseurl = 'http://localhost:8080/image/';
+  baseurl = 'https://server-ecom-1.onrender.com/image/';
 
   postImage(image:Image){
     return this.http.post<any>(`${this.baseurl}addImage`, image);

@@ -11,7 +11,7 @@ import { Observable } from 'rxjs/internal/Observable';
 export class CartService {
 
   constructor(private http: HttpClient,private route:Router) { }
-  baseurl = 'http://localhost:8080/cart/';
+  baseurl = 'https://server-ecom-1.onrender.com/cart/';
 
 
 

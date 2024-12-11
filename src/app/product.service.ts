@@ -16,7 +16,7 @@ export class ProductService {
   }
 
   constructor(private http: HttpClient,private route:Router) { }
-  baseurl = 'http://localhost:8080/product/';
+  baseurl = 'https://server-ecom-1.onrender.com/product/';
 
   postProduct(product:Product){
     return this.http.post<any>(`${this.baseurl}productPost`, product);
